@@ -1,0 +1,1 @@
+The core library contains the shared components, such as models, data preprocessing, and so on.
