@@ -1,0 +1,16 @@
+search_space:
+  max_seq_length:
+    _type: choice
+    _value: [25, 50, 75, 100, 125, 150, 175, 200]
+
+trial_command: python din_training.py
+trial_code_directory: ..
+
+trial_concurrency: 6
+max_trial_number: 6
+
+tuner:
+  name: GridSearch
+
+training_service:
+  platform: local

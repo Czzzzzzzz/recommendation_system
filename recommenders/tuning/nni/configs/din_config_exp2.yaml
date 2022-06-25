@@ -1,0 +1,20 @@
+search_space:
+  attention_mode:
+    _type: choice
+    _value: ["inner_product", "outer_product"]
+  enable_softmax:
+    _type: choice
+    _value: [True, False]
+  
+
+trial_command: python din_training.py
+trial_code_directory: ..
+
+trial_concurrency: 6
+max_trial_number: 6
+
+tuner:
+  name: GridSearch
+
+training_service:
+  platform: local
