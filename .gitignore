@@ -180,3 +180,6 @@ reports/
 
 ### pip folders
 pip-wheel*
+
+### my utils
+my_utils
