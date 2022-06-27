@@ -63,9 +63,10 @@ def din_training(params):
         need_sample=True,
         train_num_ngs=train_num_ngs, # provides the number of negative instances for each positive instance for loss computation.
         # enable_BN=params['enable_BN'],
-        activation=params['activation'],
-        dice_momentum=params['dice_momentum']
+        #activation=params['activation'],
+        #dice_momentum=params['dice_momentum']
         #max_seq_length=params['max_seq_length']
+        attention_mode=params['attention_mode']
     )
     input_creator = SequentialIterator
     model = DIN_RECModel(hparams, input_creator, seed=params['seed'])

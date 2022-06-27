@@ -14,7 +14,7 @@ trial_command: python din_training.py
 trial_code_directory: ..
 
 trial_concurrency: 6
-max_trial_number: 60
+max_trial_number: 100
 
 tuner:
   name: GridSearch
