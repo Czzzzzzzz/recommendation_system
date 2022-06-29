@@ -1,19 +1,6 @@
-# Copyright (c) Microsoft Corporation. All rights reserved.
-# Licensed under the MIT License.
-
-from recommenders.models.deeprec.deeprec_utils import HParams
 import tensorflow as tf
-# from recommenders.models.deeprec.models.sequential.sequential_base_model import (
-#     SequentialBaseModel,
-# )
 from models.deeprec.models.sequential.sequential_base_model import (
      SequentialBaseModel,
-)
-
-
-from tensorflow.compat.v1.nn import dynamic_rnn
-from recommenders.models.deeprec.models.sequential.rnn_cell_implement import (
-    Time4LSTMCell,
 )
 
 __all__ = ["DIN_RECModel"]
@@ -52,8 +39,6 @@ class DIN_RECModel(SequentialBaseModel):
 
             user_embed = self.weighted_hist_input
             model_output = tf.concat([user_embed, self.target_item_embedding], 1)
-
-            #model_output = tf.compat.v1.Print(model_output, [model_output[0]], "debug_model_output")
 
             tf.compat.v1.summary.histogram("model_output", model_output)
             return model_output

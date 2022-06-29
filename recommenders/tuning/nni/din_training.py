@@ -1,6 +1,3 @@
-# Copyright (c) Microsoft Corporation. All rights reserved.
-# Licensed under the MIT License.
-
 import logging
 from random import seed
 import numpy as np
@@ -66,7 +63,8 @@ def din_training(params):
         #activation=params['activation'],
         #dice_momentum=params['dice_momentum']
         #max_seq_length=params['max_seq_length']
-        attention_mode=params['attention_mode']
+        # attention_mode=params['attention_mode']
+        max_seq_length=params['max_seq_length']
     )
     input_creator = SequentialIterator
     model = DIN_RECModel(hparams, input_creator, seed=params['seed'])
