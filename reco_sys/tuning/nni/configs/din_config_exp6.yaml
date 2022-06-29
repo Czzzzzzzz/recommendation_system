@@ -1,0 +1,22 @@
+search_space:
+  use_side_info_level:
+    _type: choice
+    _value: [0, 1, 2]
+  attention_mode:
+    _type: choice
+    _value: ["extended_ip"]
+  seed:
+    _type: choice
+    _value: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+trial_command: python din_training.py
+trial_code_directory: ..
+
+trial_concurrency: 6
+max_trial_number: 100
+
+tuner:
+  name: GridSearch
+
+training_service:
+  platform: local

@@ -64,7 +64,7 @@ def din_training(params):
         #dice_momentum=params['dice_momentum']
         #max_seq_length=params['max_seq_length']
         # attention_mode=params['attention_mode']
-        max_seq_length=params['max_seq_length']
+        # max_seq_length=params['max_seq_length']
     )
     input_creator = SequentialIterator
     model = DIN_RECModel(hparams, input_creator, seed=params['seed'])
