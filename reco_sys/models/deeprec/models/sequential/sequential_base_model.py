@@ -8,8 +8,8 @@ import numpy as np
 import tensorflow as tf
 
 #from recommenders.models.deeprec.models.base_model import BaseModel
-from models.deeprec.models.base_model import BaseModel
-from recommenders.models.deeprec.deeprec_utils import cal_metric, load_dict
+from reco_sys.models.deeprec.models.base_model import BaseModel
+from reco_sys.models.deeprec.deeprec_utils import cal_metric, load_dict
 
 
 __all__ = ["SequentialBaseModel"]

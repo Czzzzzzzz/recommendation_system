@@ -1,5 +1,5 @@
 import tensorflow as tf
-from models.deeprec.models.sequential.sequential_base_model import (
+from reco_sys.models.deeprec.models.sequential.sequential_base_model import (
      SequentialBaseModel,
 )
 

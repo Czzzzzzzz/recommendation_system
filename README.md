@@ -5,4 +5,5 @@ The primary code comes from [Microsoft Recommenders Package](https://github.com/
 
 # Installation of development environment.
 
-Refer to the file of [conda.md](conda.md)
+1. Install required dependencies. Refer to the file of [conda.md](conda.md)
+2. Append the root of repo to the PYTHONPATH. e.g. Append this line in bash profile (~/.bashrc): export PYTHONPATH=$PYTHONPATH:/root_of_this_repo/

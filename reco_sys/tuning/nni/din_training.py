@@ -4,18 +4,18 @@ import numpy as np
 import os
 import pandas as pd
 import nni
-import sys
+# import sys
 
-if os.path.join('..', '..', '..', 'recommenders') not in sys.path:
-    sys.path.append(os.path.join('..', '..', '..', 'recommenders'))
+# if os.path.join('..', '..', '..', 'recommenders') not in sys.path:
+#     sys.path.append(os.path.join('..', '..', '..', 'recommenders'))
 
-from models.deeprec.models.sequential.din import DIN_RECModel
-from recommenders.models.deeprec.io.sequential_iterator import SequentialIterator
-from recommenders.models.deeprec.deeprec_utils import (
+from reco_sys.models.deeprec.models.sequential.din import DIN_RECModel
+from reco_sys.models.deeprec.io.sequential_iterator import SequentialIterator
+from reco_sys.models.deeprec.deeprec_utils import (
     prepare_hparams
 )
-from recommenders.utils.constants import SEED as DEFAULT_SEED
-from recommenders.utils.timer import Timer
+from reco_sys.utils.constants import SEED as DEFAULT_SEED
+from reco_sys.utils.timer import Timer
 
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger("din")
