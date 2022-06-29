@@ -31,7 +31,7 @@ def din_training(params):
     BATCH_SIZE = 400
 
     data_path = os.path.join("..", "..", "..", "tests", "resources", "deeprec", "slirec")
-    yaml_file = '../../../recommenders/models/deeprec/config/din.yaml'  
+    yaml_file = '../../../reco_sys/models/deeprec/config/din.yaml'  
 
     train_file = os.path.join(data_path, r'train_data')
     valid_file = os.path.join(data_path, r'valid_data')
